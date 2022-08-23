@@ -1,7 +1,8 @@
+<h1 class="title">Your very own to do list 🧾🖋</h1>
 <ul>
   <% @tasks.each do |task| %>
-    <li> <%= link_to task.title, task_path(task) %> </li>
+    <li class="list"> <%= link_to task.title, task_path(task) %> </li>
   <% end %>
 </ul>
 <br>
-<%= link_to "Want to make a new task?", tasks_new_path %>
+<p class="new-btn"><%= link_to "Want to make a new task?", tasks_new_path %></p>
